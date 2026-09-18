@@ -2,10 +2,6 @@
 
 A multi-level word puzzle game written in C. Players form valid English words from a given set of shuffled letters. Word validation uses a **Trie** data structure for fast dictionary lookups. Scores are stored dynamically using a **Linked List**.
 
-**Course:** Data Structures Lab (CSE 1302)  
-**University:** University of Liberal Arts Bangladesh (ULAB)  
-**Semester:** Summer 2025
-
 ## Features
 
 - Multi-level gameplay (3 levels with different letter sets)
@@ -64,13 +60,12 @@ WordPuzzleGame/
 │   └── word_puzzle.c         # Main source code
 └── docs/
     ├── Project_Report.pdf    # Full project report
-    └── Hotel_Booking_System.c # Bonus: another project (optional)
 ```
 
 ## Authors
 
-- Md. Basituzzaman (243014003)
-- Mohammad Razin Masud (243014111)
+- Mohammad Razin Masud
+- Md. Basituzzaman 
 
 ## Tools Used
 
