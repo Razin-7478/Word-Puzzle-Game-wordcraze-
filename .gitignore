@@ -30,3 +30,6 @@ desktop.ini
 *~
 *.tmp
 *.log
+
+# Node (if ever added)
+node_modules/

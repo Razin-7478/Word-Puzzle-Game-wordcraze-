@@ -1,78 +1,111 @@
-# Word Puzzle Game
+# 🧩 Word Puzzle Game
 
-A multi-level word puzzle game written in C. Players form valid English words from a given set of shuffled letters. Word validation uses a **Trie** data structure for fast dictionary lookups. Scores are stored dynamically using a **Linked List**.
+A multi-level word puzzle game that demonstrates **Trie** and **Linked List** data structures.
 
-## Features
+**Two versions included:**
+1. **Web Interface** (recommended) – Beautiful, fully playable in the browser
+2. **Original C Console Version** – The classic terminal version from the lab
 
-- Multi-level gameplay (3 levels with different letter sets)
-- Fast word validation using Trie
-- Score based on word length (10 points per letter)
-- Dynamic scoreboard with Linked List
-- Dictionary loaded from external file (`words.txt`)
-- Random letter shuffling for variety
-- Input validation (letters must come from the puzzle)
+**Course:** Data Structures Lab (CSE 1302)  
+**University:** University of Liberal Arts Bangladesh (ULAB)  
+**Semester:** Summer 2025
 
-## Data Structures Used
+---
 
-| Structure     | Purpose                                      |
-|---------------|----------------------------------------------|
-| **Trie**      | Store dictionary & check if a word is valid  |
-| **Linked List** | Store player scores across levels          |
+## 🎮 Play Online (Web Version)
 
-## Requirements
+Just open `index.html` in any modern browser — no installation required!
 
-- C compiler (GCC recommended)
-- `words.txt` dictionary file in the same directory as the executable
+**Or host it on GitHub Pages** (see instructions below).
 
-## How to Compile & Run
+### Features (Web UI)
+- Modern dark theme with smooth animations
+- Clickable letter tiles
+- Real-time scoring (10 points per letter)
+- Multi-level progression (3 levels)
+- Dynamic scoreboard
+- Shuffle letters button
+- Fully responsive (works on mobile too)
+
+### Data Structures Used
+| Structure       | Purpose                                      |
+|-----------------|----------------------------------------------|
+| **Trie**        | Store dictionary & fast word validation      |
+| **Linked List** | Store player scores across levels            |
+
+---
+
+## 🖥️ Console Version (Original C)
 
 ```bash
 # Compile
 gcc -o word_puzzle src/word_puzzle.c
 
-# Run (make sure words.txt is in the current directory)
+# Run (words.txt must be in the same folder)
 ./word_puzzle
 ```
 
-**Windows (Code::Blocks / MinGW):**
-1. Open the `.c` file in Code::Blocks
-2. Place `words.txt` in the project folder
-3. Build and Run
+**Windows (Code::Blocks):** Open `src/word_puzzle.c`, place `words.txt` in the project folder, Build & Run.
 
-## How to Play
+---
 
-1. Enter your player name
-2. You will see a set of letters for the current level
-3. Type valid English words using **only** those letters
-4. Type `end` when you want to finish the level
-5. Choose whether to continue to the next level
-6. At the end, your scoreboard will be displayed
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 WordPuzzleGame/
+├── index.html              ← Web game (open this!)
+├── css/
+│   └── style.css           ← Modern UI styles
+├── js/
+│   └── game.js             ← Game logic (Trie + Linked List in JS)
+├── words.txt               ← Dictionary for C version
+├── src/
+│   └── word_puzzle.c       ← Original C source code
+├── docs/
+│   ├── Project_Report.pdf  ← Full project report
+│   └── Hotel_Booking_System.c  ← Bonus project
 ├── README.md
 ├── LICENSE
-├── .gitignore
-├── words.txt                 # Dictionary file
-├── src/
-│   └── word_puzzle.c         # Main source code
-└── docs/
-    ├── Project_Report.pdf    # Full project report
+└── .gitignore
 ```
 
-## Authors
+---
 
-- Mohammad Razin Masud
-- Md. Basituzzaman 
+## 🚀 How to Play
+
+1. Enter your name and click **Start Game**
+2. You will see a set of letter tiles
+3. Form valid English words using **only** those letters
+4. Type the word and press Enter / Submit
+5. Longer words = more points
+6. Click **End Level** when finished
+7. Continue to the next level or finish the game
+8. View your scoreboard at the end
+
+---
+
+## 📤 Deploy to GitHub Pages (Optional)
+
+1. Push this repo to GitHub
+2. Go to **Settings → Pages**
+3. Source: **Deploy from a branch**
+4. Branch: `main` / folder: `/ (root)`
+5. Save → after 1–2 minutes your game will be live at:  
+   `https://YOUR_USERNAME.github.io/REPO_NAME/`
+
+---
+
+## 👥 Authors
+
+- **Md. Basituzzaman** (243014003)
+- **Mohammad Razin Masud** (243014111)
 
 ## Tools Used
 
-- IDE: Code::Blocks 20.03
-- Compiler: GCC
-- Language: C
+- Web: HTML5, CSS3, Vanilla JavaScript
+- Console: C (GCC / Code::Blocks)
+- Data Structures: Trie, Linked List
 
 ## License
 
-This project is released under the MIT License. See [LICENSE](LICENSE) for details.
+MIT License – see [LICENSE](LICENSE)

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Puzzle Game | Trie + Linked List</title>
+  <meta name="description" content="Multi-level Word Puzzle Game built with Trie and Linked List data structures. Form words from given letters and score points!" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧩</text></svg>" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧩 Word Puzzle Game</h1>
+      <p>Form words • Score points • Powered by Trie &amp; Linked List</p>
+    </header>
+
+    <!-- ========== START SCREEN ========== -->
+    <div id="start-screen" class="screen active">
+      <div class="card">
+        <h2>Welcome, Player!</h2>
+        <div class="form-group">
+          <label for="player-name">Enter your name</label>
+          <input type="text" id="player-name" placeholder="Your name..." maxlength="30" autocomplete="off" />
+        </div>
+        <button class="btn btn-primary" id="btn-start">Start Game ▶</button>
+
+        <div class="features">
+          <div class="feature">
+            <div class="icon">🌳</div>
+            <span>Trie Dictionary</span>
+          </div>
+          <div class="feature">
+            <div class="icon">🔗</div>
+            <span>Linked List Scores</span>
+          </div>
+          <div class="feature">
+            <div class="icon">🎯</div>
+            <span>3 Levels</span>
+          </div>
+          <div class="feature">
+            <div class="icon">⭐</div>
+            <span>10 pts / letter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== GAME SCREEN ========== -->
+    <div id="game-screen" class="screen">
+      <div class="game-header">
+        <div class="stat-box level">
+          <div class="label">Level</div>
+          <div class="value" id="level-num">1</div>
+        </div>
+        <div class="stat-box score">
+          <div class="label">Score</div>
+          <div class="value" id="level-score">0</div>
+        </div>
+        <div class="stat-box">
+          <div class="label">Words</div>
+          <div class="value" id="word-count">0</div>
+        </div>
+        <div class="stat-box">
+          <div class="label">Player</div>
+          <div class="value" id="player-display" style="font-size:1rem">—</div>
+        </div>
+      </div>
+
+      <div class="letters-area">
+        <h3>Use these letters</h3>
+        <div class="tiles" id="tiles"></div>
+      </div>
+
+      <div class="input-area">
+        <input type="text" id="word-input" placeholder="Type a word..." maxlength="15" autocomplete="off" spellcheck="false" />
+        <button class="btn btn-primary" id="btn-submit">Submit</button>
+      </div>
+
+      <div class="feedback" id="feedback"></div>
+
+      <div class="found-section">
+        <h3>Found Words</h3>
+        <div class="found-words" id="found-words"></div>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-secondary" id="btn-shuffle">🔀 Shuffle</button>
+        <button class="btn btn-danger" id="btn-end-level">End Level</button>
+      </div>
+    </div>
+
+    <!-- ========== LEVEL COMPLETE SCREEN ========== -->
+    <div id="level-complete-screen" class="screen">
+      <div class="card result-card">
+        <div class="level-label">Level <span id="completed-level">1</span> Complete!</div>
+        <div class="big-score" id="completed-score">0</div>
+        <p style="color:var(--text-muted);margin-bottom:20px">points this level</p>
+        <div class="actions" style="justify-content:center">
+          <button class="btn btn-primary" id="btn-next-level" style="max-width:200px">Next Level ▶</button>
+          <button class="btn btn-secondary" id="btn-finish-early" style="max-width:200px">Finish Game</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== FINAL SCREEN ========== -->
+    <div id="final-screen" class="screen">
+      <div class="card result-card">
+        <h2>🎉 Game Over!</h2>
+        <p style="color:var(--text-muted);margin:8px 0 4px">Total Score</p>
+        <div class="big-score" id="total-score">0</div>
+        <p id="final-player" style="color:var(--text-muted);margin-bottom:8px"></p>
+
+        <div class="scoreboard">
+          <h3>Scoreboard</h3>
+          <div id="scoreboard-list"></div>
+        </div>
+
+        <button class="btn btn-primary" id="btn-replay" style="margin-top:24px;max-width:220px;margin-left:auto;margin-right:auto">Play Again 🔄</button>
+      </div>
+    </div>
+
+    <footer>
+      Built with ❤️ using <strong>Trie</strong> &amp; <strong>Linked List</strong> · 
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> · 
+      ULAB CSE 1302 · Summer 2025
+    </footer>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
