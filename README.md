@@ -63,7 +63,6 @@ WordPuzzleGame/
 │   └── word_puzzle.c       ← Original C source code
 ├── docs/
 │   ├── Project_Report.pdf  ← Full project report
-│   └── Hotel_Booking_System.c  ← Bonus project
 ├── README.md
 ├── LICENSE
 └── .gitignore
