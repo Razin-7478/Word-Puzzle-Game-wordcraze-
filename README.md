@@ -6,10 +6,6 @@ A multi-level word puzzle game that demonstrates **Trie** and **Linked List** da
 1. **Web Interface** (recommended) – Beautiful, fully playable in the browser
 2. **Original C Console Version** – The classic terminal version from the lab
 
-**Course:** Data Structures Lab (CSE 1302)  
-**University:** University of Liberal Arts Bangladesh (ULAB)  
-**Semester:** Summer 2025
-
 ---
 
 ## 🎮 Play Online (Web Version)
