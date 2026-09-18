@@ -10,6 +10,10 @@ A multi-level word puzzle game that demonstrates **Trie** and **Linked List** da
 
 ## 🎮 Play Online (Web Version)
 
+**[▶️ Play the Game Here](https://razin-7478.github.io/Word-Puzzle-Game-wordcraze-/)**
+
+No installation needed — works in any modern browser.
+
 Just open `index.html` in any modern browser — no installation required!
 
 **Or host it on GitHub Pages** (see instructions below).
